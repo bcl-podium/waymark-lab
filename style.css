@@ -1,6 +1,13 @@
 html, body {
     margin: 0;
 }
+* {
+    font-family: Helvetica, sans-serif;
+}
 .navbar-toggler {
     border: 0px !important;
+}
+#navbar {
+    background-color: white;
+    box-shadow: 0 4px 4px #0000000a,0 12px 24px #0000000d;
 }
