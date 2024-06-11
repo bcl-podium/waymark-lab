@@ -34,6 +34,35 @@ body {
     background-color: white;
 }
 
+#help-button {
+    background-image: radial-gradient(93.54% 235.77% at 3.38% 14.65%, #DEF133 0%, #4BB4FF 100%);
+    border: 0;
+    color: black;
+}
+
+.pre {
+    white-space: pre;
+}
+
+.form-switch .form-check-input {
+    background-color: lightgrey;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e")
+}
+
+.form-switch input::after {
+    color: purple;
+}
+
+.form-switch .form-check-input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0;
+}
+
+.form-switch .form-check-input:checked {
+    box-shadow: 0 0 0 0;
+    background-color: #2488CF
+}
+
 .d-flex {
     gap: 10px;
 }
