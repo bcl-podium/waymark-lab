@@ -15,6 +15,25 @@ body {
     box-shadow: 0 4px 4px #0000000a,0 12px 24px #0000000d;
 }
 
+#brand-card {
+    min-width: 19em;
+    max-width: 20rem;
+}
+
+#brand-card .brand-card-icon {
+    width: 1rem;
+    fill: none;
+    stroke-width: 2;
+}
+
+#brand-card small {
+
+}
+
+#history-button {
+    background-color: white;
+}
+
 .d-flex {
     gap: 10px;
 }
