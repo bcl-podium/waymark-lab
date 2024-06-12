@@ -18,6 +18,7 @@ body {
 #brand-card {
     min-width: 19em;
     max-width: 20rem;
+    margin: 1px;
 }
 
 #brand-card .brand-card-icon {
@@ -26,8 +27,8 @@ body {
     stroke-width: 2;
 }
 
-#brand-card small {
-
+#brand-avatar {
+    border: 1px solid #e98300
 }
 
 #history-button {
@@ -71,10 +72,16 @@ body {
     outline: 0 none;
 }
 
+
+#vibe-select:focus {
+    box-shadow: none;
+}
+
 #instructions-input::placeholder {
     color: lightgrey;
     font-size: .9rem;
 }
+
 
 #generate-button {
     background-color: rgb(36, 136, 207);
