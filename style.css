@@ -72,6 +72,10 @@ body {
     outline: 0 none;
 }
 
+#vibe-select {
+    background-position: top right 10px;
+    background-size: 1.2rem;
+}
 
 #vibe-select:focus {
     box-shadow: none;
