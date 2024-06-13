@@ -77,6 +77,10 @@ body {
     gap: 10px;
 }
 
+.no-gap {
+    gap: 0;
+}
+
 #instructions-input:focus {
     outline: 0 none;
 }
