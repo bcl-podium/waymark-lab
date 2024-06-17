@@ -34,16 +34,17 @@ hideEvents.forEach((event) => {
 });
 
 function updateSelection(event) {
-  console.log(event);
   let floatingSelection = document.getElementById("floating-selection");
   floatingSelection.innerText = event.target.dataset.duration;
   floatingSelection.style.cssText = event.target.style.cssText;
+  hidePopper();
 }
 
 const floatingOptions = document.querySelectorAll(
   ".floating-select__option__text"
 );
 const floatingSelection = document.getElementById("floating-selection");
+
 floatingOptions.forEach((option) => {
   console.log(option);
   if (option.dataset.orientation === "landscape") {
@@ -53,7 +54,6 @@ floatingOptions.forEach((option) => {
   }
 
   option.addEventListener("click", (e) => {
-    console.log(e);
     updateSelection(e);
   });
 });
