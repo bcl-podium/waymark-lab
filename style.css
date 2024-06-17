@@ -109,15 +109,14 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 13px;
-  /* display: none; */
+  display: none;
+}
+
+#floating-select[data-show] {
   display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#floating-select[data-show] {
-    display: block;
 }
 
 #floating-select, .floating-select__option:hover {
