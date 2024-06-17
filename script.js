@@ -23,7 +23,7 @@ function hidePopper() {
 }
 
 const showEvents = ["focus"];
-const hideEvents = ["blur"];
+const hideEvents = [""];
 
 showEvents.forEach((event) => {
   filterButton.addEventListener(event, showPopper);
@@ -33,24 +33,27 @@ hideEvents.forEach((event) => {
   filterButton.addEventListener(event, hidePopper);
 });
 
-function updateSelection() {
+function updateSelection(event) {
+  console.log(event);
   let floatingSelection = document.getElementById("floating-selection");
-  floatingSelection.innerText = "30";
+  floatingSelection.innerText = event.target.dataset.duration;
+  floatingSelection.style.cssText = event.target.style.cssText;
 }
 
-updateSelection();
-
-const floatingOptions = document.querySelectorAll(".floating-select__option");
+const floatingOptions = document.querySelectorAll(
+  ".floating-select__option__text"
+);
+const floatingSelection = document.getElementById("floating-selection");
 floatingOptions.forEach((option) => {
+  console.log(option);
   if (option.dataset.orientation === "landscape") {
-    console.log(option.firstElementChild.style);
     option.style.cssText = "width: 40px;";
-    option.firstElementChild.style.cssText = "";
   } else {
     option.style.cssText = "width: 25px; height: 35px;";
   }
 
-  option.addEventListener("click", () => {
-    console.log(option.dataset.duration);
+  option.addEventListener("click", (e) => {
+    console.log(e);
+    updateSelection(e);
   });
 });

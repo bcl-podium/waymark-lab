@@ -123,22 +123,33 @@ body {
     cursor: pointer;
 }
 
+#filter-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #floating-selection {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .floating-select__option {
     text-align: center;
     margin: .3rem 0;
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .floating-select__option__text {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #arrow,
