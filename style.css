@@ -85,6 +85,11 @@ body {
     outline: 0 none;
 }
 
+#instructions-input::placeholder {
+    color: lightgrey;
+    font-size: .9rem;
+}
+
 #vibe-select {
     background-position: top right 10px;
     background-size: 1.2rem;
@@ -94,11 +99,9 @@ body {
     box-shadow: none;
 }
 
-#instructions-input::placeholder {
-    color: lightgrey;
-    font-size: .9rem;
+#format-card:hover {
+    cursor: pointer;
 }
-
 
 #generate-button {
     background-color: rgb(36, 136, 207);
