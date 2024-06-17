@@ -109,11 +109,37 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 13px;
-  display: none;
+  /* display: none; */
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #floating-select[data-show] {
     display: block;
+}
+
+#floating-select, .floating-select__option:hover {
+    cursor: pointer;
+}
+
+#floating-selection {
+    background-color: black;
+    color: white;
+}
+
+.floating-select__option {
+    text-align: center;
+    margin: .3rem 0;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-select__option__text {
+    text-align: center;
 }
 
 #arrow,
