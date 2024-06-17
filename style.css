@@ -103,6 +103,54 @@ body {
     cursor: pointer;
 }
 
+#floating-select {
+  background-color: #fff;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: none;
+}
+
+#floating-select[data-show] {
+    display: block;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+  /* background: black; */
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+#floating-select[data-popper-placement^='top'] > #arrow {
+  bottom: -4px;
+}
+
+#floating-select[data-popper-placement^='bottom'] > #arrow {
+  top: -4px;
+}
+  
+#floating-select[data-popper-placement^='left'] > #arrow {
+  right: -4px;
+}
+  
+#floating-select[data-popper-placement^='right'] > #arrow {
+  left: -4px;
+}
+
 #generate-button {
     background-color: rgb(36, 136, 207);
 }

@@ -104,11 +104,18 @@
           </select>
         </div>
       </div>
+
       <!-- FORMAT -->
       <div class="col-2 col-lg-1 mb-3 mt-2 mb-lg-3 mt-lg-0">
-        <button type="button" class="btn btn-light rounded-4 shadow h-100 px-xl-3 px-xxl-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover" id="filter-popover">
+        <button aria-describedby="floating-select" type="button" class="d-flex flex-column justify-content-center align-items-center btn btn-light rounded-4 shadow h-100 w-100" id="filter-button">
           <small>Format</small>
         </button>
+        <div id="floating-select" role="select" class="rounded-4">
+          <option class="my-2">Option 1</option>
+          <option class="my-2">Option 2</option>
+          <option class="my-2">Option 3</option>
+          <div id="arrow" data-popper-arrow></div>
+        </div>
       </div>
       <div class="col-12 col-lg-3 mb-2">
         <button class="btn btn-primary w-100 py-4 rounded-4 border-0 shadow h-100" id="generate-button"><strong>GENERATE VIDEO</strong></button>
@@ -116,15 +123,13 @@
     </div>
   </div>
 
-
-
-
   <button id="support">
     <div class="intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-open"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"><path d="M28 32s-4.714-1.855-8.527-3.34H3.437C1.54 28.66 0 27.026 0 25.013V3.644C0 1.633 1.54 0 3.437 0h21.125c1.898 0 3.437 1.632 3.437 3.645v18.404H28V32zm-4.139-11.982a.88.88 0 00-1.292-.105c-.03.026-3.015 2.681-8.57 2.681-5.486 0-8.517-2.636-8.571-2.684a.88.88 0 00-1.29.107 1.01 1.01 0 00-.219.708.992.992 0 00.318.664c.142.128 3.537 3.15 9.762 3.15 6.226 0 9.621-3.022 9.763-3.15a.992.992 0 00.317-.664 1.01 1.01 0 00-.218-.707z"></path></svg></div>
   </button>
 
   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>
