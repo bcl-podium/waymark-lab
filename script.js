@@ -40,20 +40,17 @@ function updateSelection(event) {
   hidePopper();
 }
 
-const floatingOptions = document.querySelectorAll(
-  ".floating-select__option__text"
-);
-const floatingSelection = document.getElementById("floating-selection");
+const floatingOptions = document
+  .querySelectorAll(".floating-select__option__text")
+  .forEach((option) => {
+    console.log(option);
+    if (option.dataset.orientation === "landscape") {
+      option.style.cssText = "width: 40px;";
+    } else {
+      option.style.cssText = "width: 25px; height: 35px;";
+    }
 
-floatingOptions.forEach((option) => {
-  console.log(option);
-  if (option.dataset.orientation === "landscape") {
-    option.style.cssText = "width: 40px;";
-  } else {
-    option.style.cssText = "width: 25px; height: 35px;";
-  }
-
-  option.addEventListener("click", (e) => {
-    updateSelection(e);
+    option.addEventListener("click", (e) => {
+      updateSelection(e);
+    });
   });
-});
