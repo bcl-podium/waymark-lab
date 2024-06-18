@@ -73,9 +73,6 @@ body {
     background-color: #2488CF
 }
 
-.d-flex {
-    gap: 10px;
-}
 
 .no-gap {
     gap: 0;
