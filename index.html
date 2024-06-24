@@ -6,13 +6,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <title>Imposter Waymark</title>
+  <title>Waymark Video Ads | Online Video Maker</title>
 </head>
 <body>
+
+  <!-- NAVIGATION -->
   <nav class="navbar navbar-expand-md p-0 mb-5" id="navbar">
     <div class="container-fluid m-0 p-0">
       <a class="navbar-brand m-0 p-0" href="#">
-        <img src="./waymark-header-logo.avif" alt="Waymark">
+        <img src="./assets/waymark-header-logo.avif" alt="Waymark">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32"><g id="01.-glyphs-/-menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round"><path d="M6,21 L26,21" id="bottom-line" stroke="currentColor"></path><path d="M6,12 L26,12" id="top-line" stroke="currentColor"></path></g></svg>
@@ -28,13 +30,14 @@
     </div>
   </nav>
 
-  <main class="container px-3">
-    <div class="container px-2 mb-5 d-flex justify-content-between align-items-center">
+  <main class="container-fluid px-3 px-md-0">
+    <!-- BRAND CARD AND HISTORY -->
+    <div class="px-2 px-md-5 mb-5 d-flex justify-content-between align-items-center">
       <div class="card-wrapper rounded-4" style="background: radial-gradient(93.54% 235.77% at 3.38% 14.65%,#3AAF54 0%, #2488CF 100%);">
-        <div class="card px-3 py-1 rounded-4 border-0" id="brand-card">
+        <div class="card px-3 pt-1 rounded-4 border-0" id="brand-card">
           <div class="row">
             <div class="col-3 d-flex justify-content-center align-items-center">
-              <img src="placeholder.png" height="42" width="42" class="rounded-3" id="brand-avatar">
+              <img src="./assets/placeholder.png" height="42" width="42" class="rounded-3" id="brand-avatar">
             </div>
             <div class="col-9 d-flex flex-column justify-content-between py-1" style="gap: 0;">
               <p class="card-title m-0"><strong>Your Brand</strong></p>
@@ -55,14 +58,14 @@
         </div>
       </div>
 
-      <button class="border-0 rounded-2 px-3 py-2 shadow rounded-3" id="history-button">
+      <button class="border-0 rounded-2 px-3 py-2 shadow-sm rounded-3" id="history-button">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.50832 7.82404V7.83452L8.5158 7.84187L10.4323 9.72505C10.4323 9.72508 10.4324 9.72512 10.4324 9.72515C10.5277 9.82054 10.575 9.93363 10.575 10.0657C10.575 10.1978 10.5277 10.311 10.4323 10.4064C10.3367 10.502 10.2263 10.549 10.1 10.549C9.97372 10.549 9.86329 10.502 9.76766 10.4064L9.76752 10.4062L7.701 8.37303C7.70098 8.37301 7.70096 8.37299 7.70094 8.37297C7.64747 8.31949 7.61088 8.26418 7.59015 8.20716C7.56895 8.14886 7.55832 8.08787 7.55832 8.02404V5.17404C7.55832 5.03563 7.60331 4.92273 7.69266 4.83338C7.78201 4.74403 7.89491 4.69904 8.03332 4.69904C8.17173 4.69904 8.28463 4.74403 8.37398 4.83338C8.46333 4.92273 8.50832 5.03563 8.50832 5.17404V7.82404ZM2.07474 8.80389L2.07474 8.80384C2.05332 8.65391 2.08283 8.52747 2.16165 8.42237C2.24008 8.31781 2.35245 8.25964 2.50177 8.24898L2.50206 8.24895C2.62809 8.23845 2.73782 8.27749 2.83282 8.36722C2.92884 8.4579 2.98724 8.56676 3.0086 8.69446C3.19832 9.94434 3.7454 10.9884 4.64967 11.8257C5.55454 12.6636 6.65515 13.0824 7.94999 13.0824C9.36767 13.0824 10.5685 12.5853 11.5511 11.5916C12.5336 10.598 13.025 9.39162 13.025 7.97404C13.025 6.58949 12.5278 5.41908 11.534 4.46434C10.5404 3.50981 9.34524 3.03237 7.94999 3.03237C7.19047 3.03237 6.47816 3.20554 5.81344 3.55187C5.14951 3.89778 4.57201 4.35532 4.08106 4.92438L4.0454 4.96571H4.09999H5.34999C5.4884 4.96571 5.60129 5.0107 5.69064 5.10005C5.77999 5.1894 5.82499 5.3023 5.82499 5.44071C5.82499 5.57912 5.77999 5.69201 5.69064 5.78136C5.60129 5.87071 5.4884 5.91571 5.34999 5.91571H2.86665C2.72824 5.91571 2.61535 5.87071 2.526 5.78136C2.43665 5.69201 2.39165 5.57912 2.39165 5.44071V2.97404C2.39165 2.83563 2.43665 2.72273 2.526 2.63338C2.61535 2.54403 2.72824 2.49904 2.86665 2.49904C3.00506 2.49904 3.11796 2.54403 3.20731 2.63338C3.29666 2.72273 3.34165 2.83563 3.34165 2.97404V4.24071V4.30857L3.38568 4.25692C3.96125 3.58174 4.64463 3.05053 5.43598 2.66316C6.22698 2.27596 7.06489 2.08237 7.94999 2.08237C8.78012 2.08237 9.56012 2.23731 10.2902 2.54705C11.0208 2.85699 11.6598 3.28027 12.2075 3.8169C12.7552 4.35349 13.1867 4.98138 13.5021 5.70075C13.8173 6.41962 13.975 7.19396 13.975 8.02404C13.975 8.85412 13.8173 9.63406 13.502 10.3641C13.1866 11.0946 12.7551 11.7308 12.2074 12.2729C11.6597 12.8151 11.0206 13.2439 10.2901 13.5594C9.56001 13.8747 8.78006 14.0324 7.94999 14.0324C6.40034 14.0324 5.08705 13.5345 4.00861 12.539C2.92964 11.543 2.28507 10.2983 2.07474 8.80389Z" fill="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         <p class="d-none d-md-inline"><strong><small>RECENT HISTORY</small></strong></p>
       </button>
-
     </div>
 
-    <div class="container">
+    <!-- HIGHLIGHT AND STOCK FOOTAGE TOGGLE -->
+    <div class="container-fluid px-3">
       <div class="row">
         <div class="col-12 col-md-8 text-start">
           <p class="h5" id="highlight">Anything you want to highlight? If not, just leave this blank.</p>
@@ -75,7 +78,8 @@
           </div>
         </div>
       </div>
-      <!-- Big 12 -->
+
+      <!-- INSTRUCTIONS -->
       <div class="row gy-3 g-lg-3">
         <div class="col-12 col-lg-6">
           <div class="card d-flex justify-content-center w-100 h-100 px-4 py-3 mb-1 border-0 shadow rounded-4">
@@ -95,7 +99,7 @@
         </div>
 
         <!-- VIBE -->
-        <div class="col-9 col-sm-10 col-lg-2">
+        <div class="col-9 col-md-10 col-lg-2">
           <div class="card d-flex justify-content-center h-100 w-100 px-4 py-3 mb-1 border-0 shadow rounded-4">
             <small>Vibe</small>
             <select class="form-select rounded-4 border-0 px-0" id="vibe-select">
@@ -108,10 +112,10 @@
         </div>
 
         <!-- FORMAT -->
-        <div class="col-3 col-sm-2 col-lg-1">
+        <div class="col-3 col-md-2 col-lg-1">
           <button aria-describedby="floating-select" type="button" class="btn btn-light rounded-4 shadow h-100 w-100" id="filter-button">
             <small class="m-0">Format</small>
-            <small id="floating-selection" style="width: 40px;">30</small>
+            <small id="floating-selection">30</small>
           </button>
           <div id="floating-select" role="select" class="rounded-4 py-3">
             <div role="option" data-duration="30" data-orientation="landscape" class="floating-select__option my-2 text-center">
@@ -141,6 +145,8 @@
       </div>
     </div>
   </main>
+
+  <!-- SUPPORT -->
   <button id="support">
     <div class="intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-open"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"><path d="M28 32s-4.714-1.855-8.527-3.34H3.437C1.54 28.66 0 27.026 0 25.013V3.644C0 1.633 1.54 0 3.437 0h21.125c1.898 0 3.437 1.632 3.437 3.645v18.404H28V32zm-4.139-11.982a.88.88 0 00-1.292-.105c-.03.026-3.015 2.681-8.57 2.681-5.486 0-8.517-2.636-8.571-2.684a.88.88 0 00-1.29.107 1.01 1.01 0 00-.219.708.992.992 0 00.318.664c.142.128 3.537 3.15 9.762 3.15 6.226 0 9.621-3.022 9.763-3.15a.992.992 0 00.317-.664 1.01 1.01 0 00-.218-.707z"></path></svg></div>
   </button>
@@ -148,6 +154,6 @@
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="popover.js"></script>
 </body>
 </html>

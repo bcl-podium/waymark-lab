@@ -45,9 +45,9 @@ const floatingOptions = document
   .forEach((option) => {
     console.log(option);
     if (option.dataset.orientation === "landscape") {
-      option.style.cssText = "width: 40px;";
+      option.style.cssText = "width: 40px; padding: 2px 0";
     } else {
-      option.style.cssText = "width: 25px; height: 35px;";
+      option.style.cssText = "width: 25px; height: 30px;";
     }
 
     option.addEventListener("click", (e) => {

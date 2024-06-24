@@ -1,15 +1,19 @@
 html, body {
     margin: 0;
 }
-* {
-    font-family: Helvetica, sans-serif;
-}
+
 body {
     background-color: rgba(144, 155, 172, 0.08);
 }
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
 .navbar-toggler {
     border: 0px !important;
 }
+
 #navbar {
     background-color: white;
     box-shadow: 0 4px 4px #0000000a,0 12px 24px #0000000d;
@@ -78,7 +82,6 @@ body {
     background-color: #2488CF
 }
 
-
 .no-gap {
     gap: 0;
 }
@@ -138,6 +141,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
+    width: 40px; 
+    padding: 2px 0; 
+    font-weight: 300;
+    font-size: 12px;
 }
 
 .floating-select__option {
@@ -160,7 +168,6 @@ body {
   width: 8px;
   height: 8px;
   background: inherit;
-  /* background: black; */
 }
 
 #arrow {
