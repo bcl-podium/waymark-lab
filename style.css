@@ -1,106 +1,116 @@
-html, body {
-    margin: 0;
-}
-* {
-    font-family: Helvetica, sans-serif;
-}
+html,
 body {
-    background-color: rgba(144, 155, 172, 0.08);
-}
-.navbar-toggler {
-    border: 0px !important;
-}
-#navbar {
-    background-color: white;
-    box-shadow: 0 4px 4px #0000000a,0 12px 24px #0000000d;
+  margin: 0;
 }
 
-#brand-card {
-    min-width: 19em;
-    max-width: 20rem;
-    margin: 1px;
+body {
+  background-color: rgba(144, 155, 172, 0.08);
 }
 
-#brand-card .brand-card-icon {
-    width: 1rem;
-    fill: none;
-    stroke-width: 2;
-}
-
-#brand-avatar {
-    border: 1px solid #e98300
-}
-
-#history-button {
-    background-color: white;
-}
-
-.badge {
-    background-color: rgba(144, 155, 172) !important;
-}
-
-#help-button {
-    background-image: radial-gradient(93.54% 235.77% at 3.38% 14.65%, #DEF133 0%, #4BB4FF 100%);
-    border: 0;
-    color: black;
-}
-
-.pre {
-    white-space: pre;
-}
-
-.form-switch {
-    transform: scale(1.4, 1.5) !important; 
-    transform-origin: center !important;
-}
-
-.form-switch .form-check-input {
-    background-color: lightgrey;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e")
-}
-
-.form-switch input::after {
-    color: purple;
-}
-
-.form-switch .form-check-input:focus {
-    box-shadow: 0 0 0 0;
-    border: 0;
-}
-
-.form-switch .form-check-input:checked {
-    box-shadow: 0 0 0 0;
-    background-color: #2488CF
-}
-
-.d-flex {
-    gap: 10px;
+* {
+  font-family: Helvetica, sans-serif;
 }
 
 .no-gap {
-    gap: 0;
+  gap: 0;
+}
+
+.navbar-toggler {
+  border: 0px !important;
+}
+
+#navbar {
+  background-color: white;
+  box-shadow: 0 4px 4px #0000000a, 0 12px 24px #0000000d;
+}
+
+#brand-card {
+  min-width: 228px;
+  max-width: 320px;
+  margin: 1px;
+}
+
+#brand-card .brand-card-icon {
+  width: 1rem;
+  fill: none;
+  stroke-width: 2;
+}
+
+#brand-avatar {
+  border: 1px solid #e98300;
+}
+
+#history-button {
+  background-color: white;
+}
+
+#highlight {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.badge {
+  background-color: rgba(144, 155, 172) !important;
+}
+
+.pre {
+  white-space: pre;
+}
+
+.form-switch {
+  transform: scale(1.4, 1.5) !important;
+  transform-origin: center !important;
+}
+
+.form-switch .form-check-input {
+  background-color: lightgrey;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.form-switch input::after {
+  color: purple;
+}
+
+.form-switch .form-check-input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0;
+}
+
+.form-switch .form-check-input:checked {
+  box-shadow: 0 0 0 0;
+  background-color: #2488cf;
 }
 
 #instructions-input:focus {
-    outline: 0 none;
+  outline: 0 none;
 }
 
 #instructions-input::placeholder {
-    color: lightgrey;
-    font-size: .9rem;
+  color: lightgrey;
+  font-size: 0.9rem;
+}
+
+#help-button {
+  background-image: radial-gradient(
+    93.54% 235.77% at 3.38% 14.65%,
+    #def133 0%,
+    #4bb4ff 100%
+  );
+  border: 0;
+  color: black;
 }
 
 #vibe-select {
-    background-position: top right 10px;
-    background-size: 1.2rem;
+  background-position: top right 10px;
+  background-size: 1.2rem;
 }
 
 #vibe-select:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 #format-card:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #floating-select {
@@ -113,43 +123,49 @@ body {
 }
 
 #floating-select[data-show] {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#floating-select, .floating-select__option:hover {
-    cursor: pointer;
+#floating-select,
+.floating-select__option:hover {
+  cursor: pointer;
 }
 
 #filter-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #floating-selection {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 40px;
+  padding: 2px 0;
+  font-weight: 300;
+  font-size: 12px;
 }
 
 .floating-select__option {
-    text-align: center;
-    margin: .3rem 0;
-    border: 1px solid black;
+  text-align: center;
+  margin: 0.3rem 0;
+  border: 1px solid black;
 }
 
 .floating-select__option__text {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #arrow,
@@ -158,7 +174,6 @@ body {
   width: 8px;
   height: 8px;
   background: inherit;
-  /* background: black; */
 }
 
 #arrow {
@@ -167,50 +182,56 @@ body {
 
 #arrow::before {
   visibility: visible;
-  content: '';
+  content: "";
   transform: rotate(45deg);
 }
 
-#floating-select[data-popper-placement^='top'] > #arrow {
+#floating-select[data-popper-placement^="top"] > #arrow {
   bottom: -4px;
 }
 
-#floating-select[data-popper-placement^='bottom'] > #arrow {
+#floating-select[data-popper-placement^="bottom"] > #arrow {
   top: -4px;
 }
-  
-#floating-select[data-popper-placement^='left'] > #arrow {
+
+#floating-select[data-popper-placement^="left"] > #arrow {
   right: -4px;
 }
-  
-#floating-select[data-popper-placement^='right'] > #arrow {
+
+#floating-select[data-popper-placement^="right"] > #arrow {
   left: -4px;
 }
 
 #generate-button {
-    background-color: rgb(36, 136, 207);
+  background-color: rgb(36, 136, 207);
 }
 #generate-button:hover {
-    background-color: #4BB4FF
+  background-color: #4bb4ff;
 }
 
 #support {
-    width: 48px;
-    height: 48px;
-    border: 0;
-    position: absolute;
-    border-radius: 50%;
-    padding: 5px;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4BB4FF
+  width: 48px;
+  height: 48px;
+  border: 0;
+  position: absolute;
+  border-radius: 50%;
+  padding: 5px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4bb4ff;
 }
 
 #support svg {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 #support path {
-    fill: #fff;
+  fill: #fff;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    width: 195px;
+  }
 }
