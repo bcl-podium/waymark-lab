@@ -16,8 +16,8 @@ body {
 }
 
 #brand-card {
-    min-width: 19em;
-    max-width: 20rem;
+    min-width: 228px;
+    max-width: 320px;
     margin: 1px;
 }
 
@@ -43,6 +43,11 @@ body {
     background-image: radial-gradient(93.54% 235.77% at 3.38% 14.65%, #DEF133 0%, #4BB4FF 100%);
     border: 0;
     color: black;
+}
+
+#highlight {
+    font-size: 20px; 
+    font-weight: 700;
 }
 
 .pre {
@@ -210,4 +215,10 @@ body {
 
 #support path {
     fill: #fff;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand img {
+        width: 195px;
+    }
 }
