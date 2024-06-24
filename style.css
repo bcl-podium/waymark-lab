@@ -24,6 +24,11 @@ body {
   box-shadow: 0 4px 4px #0000000a, 0 12px 24px #0000000d;
 }
 
+main {
+  padding-top: 115px;
+}
+
+
 #brand-card {
   min-width: 228px;
   max-width: 320px;
@@ -230,8 +235,24 @@ body {
   fill: #fff;
 }
 
+
 @media (max-width: 767px) {
   .navbar-brand img {
     width: 195px;
+  }
+  .navbar-nav {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px
+  }
+  .navbar-toggler {
+    z-index: 2;
+  }
+  main {
+    padding-top: 100px;
   }
 }
