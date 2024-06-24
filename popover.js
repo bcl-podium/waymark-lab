@@ -43,7 +43,6 @@ function updateSelection(event) {
 const floatingOptions = document
   .querySelectorAll(".floating-select__option__text")
   .forEach((option) => {
-    console.log(option);
     if (option.dataset.orientation === "landscape") {
       option.style.cssText = "width: 40px; padding: 2px 0";
     } else {
