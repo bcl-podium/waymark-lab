@@ -147,6 +147,12 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 0;
+}
+
+#filter-button:hover {
+  background-color: inherit;
+  border: 0;
 }
 
 #floating-selection {
