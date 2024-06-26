@@ -64,86 +64,88 @@
       </button>
     </div>
 
-    <!-- HIGHLIGHT AND STOCK FOOTAGE TOGGLE -->
-    <div class="container-fluid px-3">
-      <div class="row">
-        <div class="col-12 col-md-8 text-start">
-          <p class="h5" id="highlight">Anything you want to highlight? If not, just leave this blank.</p>
+    <form class="pt-5 mx-auto">
+      <!-- HIGHLIGHT AND STOCK FOOTAGE TOGGLE -->
+      <div class="container-fluid px-3">
+        <div class="row">
+          <div class="col-12 col-md-8 text-start">
+            <p class="h5" id="highlight">Anything you want to highlight? If not, just leave this blank.</p>
+          </div>
+          <div class="col-12 col-md-4 d-flex justify-content-end align-items-center ms-auto mb-3" style="gap: 10px;">
+            <span class="badge text-bg-secondary">BETA</span>
+            <strong class="me-2"><small style="font-size: 13px; font-weight: 700;">Include Stock Footage</small></strong>
+            <div class="form-check form-switch" style="transform: scale(1.3); transform-origin: center;">
+              <input class="form-check-input" type="checkbox" role="switch" id="switch-toggle">
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-4 d-flex justify-content-end align-items-center ms-auto mb-3" style="gap: 10px;">
-          <span class="badge text-bg-secondary">BETA</span>
-          <strong class="me-2"><small style="font-size: 13px; font-weight: 700;">Include Stock Footage</small></strong>
-          <div class="form-check form-switch" style="transform: scale(1.3); transform-origin: center;">
-            <input class="form-check-input" type="checkbox" role="switch" id="switch-toggle">
+
+        <!-- INSTRUCTIONS -->
+        <div class="row gy-3 g-lg-3">
+          <div class="col-12 col-lg-7">
+            <div class="card d-flex justify-content-center w-100 h-100 px-4 py-3 mb-1 border-0 shadow rounded-4">
+              <div class="row">
+                <div class="col-8 d-flex flex-column">
+                  <small>AI Instructions</small>
+                  <input class="border-0" type="text" placeholder="Message, slogan, product name, job title or anything else" id="instructions-input">
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-end">
+                  <button class="btn btn-success btn-sm rounded-3 d-flex justify-content-center align-items-center" id="help-button">
+                    <svg class="me-1" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22.0002C11.4333 22.0002 10.9542 21.8044 10.5625 21.4127C10.1708 21.021 9.975 20.5419 9.975 19.9752H14.025C14.025 20.5419 13.8292 21.021 13.4375 21.4127C13.0458 21.8044 12.5667 22.0002 12 22.0002ZM7.95 18.4252V16.9252H16.05V18.4252H7.95ZM8.075 15.4002C6.975 14.6835 6.10417 13.7877 5.4625 12.7127C4.82083 11.6377 4.5 10.4252 4.5 9.0752C4.5 7.04186 5.24167 5.28353 6.725 3.8002C8.20833 2.31686 9.96667 1.5752 12 1.5752C14.0333 1.5752 15.7917 2.31686 17.275 3.8002C18.7583 5.28353 19.5 7.04186 19.5 9.0752C19.5 10.4252 19.1833 11.6377 18.55 12.7127C17.9167 13.7877 17.0417 14.6835 15.925 15.4002H8.075ZM8.625 13.9002H15.4C16.2 13.3669 16.8333 12.6752 17.3 11.8252C17.7667 10.9752 18 10.0585 18 9.0752C18 7.4252 17.4125 6.0127 16.2375 4.8377C15.0625 3.6627 13.65 3.0752 12 3.0752C10.35 3.0752 8.9375 3.6627 7.7625 4.8377C6.5875 6.0127 6 7.4252 6 9.0752C6 10.0585 6.23333 10.9752 6.7 11.8252C7.16667 12.6752 7.80833 13.3669 8.625 13.9002Z" fill="currentColor"></path></svg>
+                    <strong class="pre">HELP ME</strong>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIBE -->
+          <div class="col-9 col-md-10 col-lg-2">
+            <div class="card d-flex justify-content-center h-100 w-100 px-4 py-3 mb-1 border-0 shadow rounded-4">
+              <small>Vibe</small>
+              <select class="form-select rounded-4 border-0 px-0" id="vibe-select">
+                <option value="1">Professional</option>
+                <option selected>Fun</option>
+                <option value="2">Laid-Back</option>
+                <option value="3">Inspiring</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- FORMAT -->
+          <div class="col-3 col-md-2 col-lg-1">
+            <button aria-describedby="floating-select" type="button" class="btn btn-light rounded-4 shadow h-100 w-100" id="filter-button">
+              <small class="m-0">Format</small>
+              <small id="floating-selection">30</small>
+            </button>
+            <div id="floating-select" role="select" class="rounded-4 py-3">
+              <div role="option" data-duration="30" data-orientation="landscape" class="floating-select__option my-2 text-center">
+                <span data-duration="30" data-orientation="landscape" class="floating-select__option__text">30</span>
+              </div>
+              <div role="option" data-duration="15" data-orientation="landscape" class="floating-select__option">
+                <span data-duration="15" data-orientation="landscape" class="floating-select__option__text">15</span>
+              </div>
+              <div role="option" data-duration="6" data-orientation="landscape" class="floating-select__option">
+                <span data-duration="6" data-orientation="landscape" class="floating-select__option__text">6</span>
+              </div>
+              <div role="option" data-duration="15" data-orientation="portrait" class="floating-select__option">
+                <span data-duration="15" data-orientation="portrait" class="floating-select__option__text">15</span>
+              </div>
+              <div role="option" data-duration="10" data-orientation="portrait" class="floating-select__option">
+                <span data-duration="10" data-orientation="portrait" class="floating-select__option__text">10</span>
+              </div>
+              <div role="option" data-duration="6" data-orientation="portrait" class="floating-select__option">
+                <span data-duration="6" data-orientation="portrait" class="floating-select__option__text">6</span>
+              </div>
+              <div id="arrow" data-popper-arrow></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2">
+            <button class="btn btn-primary w-100 py-4 px-0 rounded-4 border-0 shadow h-100" id="generate-button"><strong class="pre" style="font-size: 15px;">GENERATE VIDEO</strong></button>
           </div>
         </div>
       </div>
-
-      <!-- INSTRUCTIONS -->
-      <div class="row gy-3 g-lg-3">
-        <div class="col-12 col-lg-6">
-          <div class="card d-flex justify-content-center w-100 h-100 px-4 py-3 mb-1 border-0 shadow rounded-4">
-            <div class="row">
-              <div class="col-8 d-flex flex-column">
-                <small>AI Instructions</small>
-                <input class="border-0" type="text" placeholder="Message, slogan, product name, job title or anything else" id="instructions-input">
-              </div>
-              <div class="col-4 d-flex align-items-center justify-content-end">
-                <button class="btn btn-success btn-sm rounded-3 d-flex justify-content-center align-items-center" id="help-button">
-                  <svg class="me-1" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22.0002C11.4333 22.0002 10.9542 21.8044 10.5625 21.4127C10.1708 21.021 9.975 20.5419 9.975 19.9752H14.025C14.025 20.5419 13.8292 21.021 13.4375 21.4127C13.0458 21.8044 12.5667 22.0002 12 22.0002ZM7.95 18.4252V16.9252H16.05V18.4252H7.95ZM8.075 15.4002C6.975 14.6835 6.10417 13.7877 5.4625 12.7127C4.82083 11.6377 4.5 10.4252 4.5 9.0752C4.5 7.04186 5.24167 5.28353 6.725 3.8002C8.20833 2.31686 9.96667 1.5752 12 1.5752C14.0333 1.5752 15.7917 2.31686 17.275 3.8002C18.7583 5.28353 19.5 7.04186 19.5 9.0752C19.5 10.4252 19.1833 11.6377 18.55 12.7127C17.9167 13.7877 17.0417 14.6835 15.925 15.4002H8.075ZM8.625 13.9002H15.4C16.2 13.3669 16.8333 12.6752 17.3 11.8252C17.7667 10.9752 18 10.0585 18 9.0752C18 7.4252 17.4125 6.0127 16.2375 4.8377C15.0625 3.6627 13.65 3.0752 12 3.0752C10.35 3.0752 8.9375 3.6627 7.7625 4.8377C6.5875 6.0127 6 7.4252 6 9.0752C6 10.0585 6.23333 10.9752 6.7 11.8252C7.16667 12.6752 7.80833 13.3669 8.625 13.9002Z" fill="currentColor"></path></svg>
-                  <strong class="pre">HELP ME</strong>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- VIBE -->
-        <div class="col-9 col-md-10 col-lg-2">
-          <div class="card d-flex justify-content-center h-100 w-100 px-4 py-3 mb-1 border-0 shadow rounded-4">
-            <small>Vibe</small>
-            <select class="form-select rounded-4 border-0 px-0" id="vibe-select">
-              <option value="1">Professional</option>
-              <option selected>Fun</option>
-              <option value="2">Laid-Back</option>
-              <option value="3">Inspiring</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- FORMAT -->
-        <div class="col-3 col-md-2 col-lg-1">
-          <button aria-describedby="floating-select" type="button" class="btn btn-light rounded-4 shadow h-100 w-100" id="filter-button">
-            <small class="m-0">Format</small>
-            <small id="floating-selection">30</small>
-          </button>
-          <div id="floating-select" role="select" class="rounded-4 py-3">
-            <div role="option" data-duration="30" data-orientation="landscape" class="floating-select__option my-2 text-center">
-              <span data-duration="30" data-orientation="landscape" class="floating-select__option__text">30</span>
-            </div>
-            <div role="option" data-duration="15" data-orientation="landscape" class="floating-select__option">
-              <span data-duration="15" data-orientation="landscape" class="floating-select__option__text">15</span>
-            </div>
-            <div role="option" data-duration="6" data-orientation="landscape" class="floating-select__option">
-              <span data-duration="6" data-orientation="landscape" class="floating-select__option__text">6</span>
-            </div>
-            <div role="option" data-duration="15" data-orientation="portrait" class="floating-select__option">
-              <span data-duration="15" data-orientation="portrait" class="floating-select__option__text">15</span>
-            </div>
-            <div role="option" data-duration="10" data-orientation="portrait" class="floating-select__option">
-              <span data-duration="10" data-orientation="portrait" class="floating-select__option__text">10</span>
-            </div>
-            <div role="option" data-duration="6" data-orientation="portrait" class="floating-select__option">
-              <span data-duration="6" data-orientation="portrait" class="floating-select__option__text">6</span>
-            </div>
-            <div id="arrow" data-popper-arrow></div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3">
-          <button class="btn btn-primary w-100 py-4 rounded-4 border-0 shadow h-100" id="generate-button"><strong>GENERATE VIDEO</strong></button>
-        </div>
-      </div>
-    </div>
+    </form>
   </main>
 
   <!-- SUPPORT -->

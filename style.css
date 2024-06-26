@@ -27,11 +27,15 @@ main {
   padding-top: 115px;
 }
 
+form {
+  max-width: 1024px;
+}
 
 #brand-card {
   min-width: 228px;
   max-width: 320px;
   margin: 1px;
+  background-color: rgba(250, 252, 253, 0.96);
 }
 
 #brand-card .brand-card-icon {
@@ -105,7 +109,7 @@ main {
 }
 
 #vibe-select {
-  background-position: top right 10px;
+  background-position: top right 5px;
   background-size: 1.2rem;
 }
 
